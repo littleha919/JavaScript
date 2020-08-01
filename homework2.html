@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework2</title>
+    <link rel="stylesheet" href="./css/homework2.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    </style>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+<body class="body-hw2">
+    <div class="bg">
+      <img class="bg-img" src="./images/hw2.jpg" alt="">
+    </div> 
+    <div class="hw2">
+      <nav>
+        <ul>
+          <li><a href="index.html">homework1</a></li>
+          <li><a href="homework2.html">homework2</a></li>
+          <li><a href="homework3.html">homework3</a></li>
+          <li><a href="homework4.html">homework4</a></li>
+          <li><a href="homework5.html">homework5</a></li>
+        </ul>
+      </nav>
+        <form action="" method="post">
+            <fieldset>
+            <legend>Form Check</legend>
+            <div class="st1">
+              <label for="user">姓名：</label>
+              <input type="text" name="username" id="user" onblur="checkName(this)" placeholder="請輸入姓名" autocomplete="off">
+              <span id="displayNameIcon"></span><span id="displayName"></span>
+              <p class="stp">(1.不可空白，2.至少兩個字以上，3.必須全部為中文字)</p>
+            </div>
+              <div class="st1">
+                <label for="password">密碼：</label>
+                <input type="password" name="username" id="password" onblur="checkPassword(this)"placeholder="請輸入密碼" autocomplete="off">
+                <span  onclick="hideShowPsw()"><i id="Password_icon" class="fas fa-eye"></i></span></i><span id="displayPasswordIcon"></span><span id="displayPassword"></span>
+                <p class="stp">(1.不可空白，2.至少6個字且必須包含英文字母、數字、特殊字元[!@#$%^&*])</p>
+              </div>
+              <div class="st1">
+                <label for="date">日期：</label>
+                <input type="text" name="username" id="date" onblur="checkDate(this)" placeholder="ex: 2003/04/01" autocomplete="off">
+                <span id="displayDateIcon"></span><span id="displayDate"></span>
+                <p class="stp">格式:西元年/月/日 yyyy/mm/dd</p>               
+              </div>
+              <div class="sub">
+                <input type="submit" value="送出" id="sub">
+                <input type="reset" value="清除" id="res">
+              </div>
+        </fieldset>
+          </form>
+        </div>
+        <script src="./js/homework2.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
